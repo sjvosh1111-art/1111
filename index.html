@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>빙그레 — K-Food 글로벌 랜딩페이지 기획안 (마크다운 리스트)</title>
+  <style>
+    :root{
+      --bg:#ffffff; --text:#111217; --muted:#6b7280; --accent:#0ea5a4;
+      --card:#f8fafc; --radius:14px; --gap:20px; font-family:Inter, "Noto Sans KR", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    }
+    body{background:var(--bg); color:var(--text); margin:0; padding:48px; display:flex; justify-content:center;}
+    .wrap{max-width:1000px; width:100%; border-radius:18px; box-shadow:0 6px 30px rgba(16,24,40,0.06); padding:36px; background:linear-gradient(180deg, #fff, #fbfdfe);}
+    header{display:flex; gap:16px; align-items:center; margin-bottom:18px;}
+    header img{width:56px; height:56px; border-radius:10px; object-fit:cover; box-shadow:0 4px 18px rgba(14,165,164,0.08);}
+    h1{font-size:20px; margin:0; letter-spacing:-0.02em;}
+    p.lead{margin:6px 0 0; color:var(--muted); font-size:13px;}
+    .md-list{margin-top:22px; line-height:1.6; font-size:15px;}
+    .section{margin-bottom:22px; padding:18px; background:var(--card); border-radius:12px;}
+    .section h2{margin:0 0 8px; font-size:16px;}
+    .copy{font-weight:600; margin-bottom:6px;}
+    .idea{color:var(--muted); font-size:14px;}
+    .raw-markdown{margin-top:18px; border-radius:10px; background:#0f1724; color:#e6eef6; padding:18px; font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Noto Mono", monospace; font-size:13px; white-space:pre-wrap;}
+    footer{margin-top:18px; color:var(--muted); font-size:13px;}
+    /* responsive */
+    @media (max-width:720px){
+      body{padding:20px;}
+      .wrap{padding:18px;}
+      header img{width:48px;height:48px;}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main" aria-labelledby="title">
+    <header>
+      <img src="https://via.placeholder.com/120x120.png?text=빙그레" alt="빙그레 로고 (플레이스홀더)">
+      <div>
+        <h1 id="title">빙그레 — K-Food 글로벌 랜딩페이지 기획안 (마크다운 리스트)</h1>
+        <p class="lead">톤: 미니멀 & 모던 · 어조: 전문적이지만 친절함 · 타겟: 외국인(글로벌 K-Food 홍보)</p>
+      </div>
+    </header>
+
+    <section class="md-list" aria-label="마크다운 리스트 (렌더링)">
+      <!-- Section 1 -->
+      <div class="section">
+        <h2>1. 히어로(Hero)</h2>
+        <div class="copy">핵심 카피: <strong>“Taste Korea — Tradition & Joy in Every Bite”</strong></div>
+        <div class="idea">
+          디자인/레이아웃 아이디어:
+          <ul>
+            <li>전체 화면 너비의 심플한 레이아웃, 중앙 정렬된 짧은 카피와 서브텍스트(영문).</li>
+            <li>좌측에는 미니멀한 제품(바나나우유, 메로나)의 사진(고속 촬영 느낌, 흰 배경) — 우측은 핵심 CTA(Visit Products / Recipes / Store Locator).</li>
+            <li>배경은 연한 크림 톤 + 아주 얇은 그리드 패턴, 버튼은 둥근 모서리와 얇은 아쿠아 컬러 액센트.</li>
+            <li>필수 문구 포함 영역(작은 서브카피): <em>“빙그레는 국민의 건강과 행복을 위해 최상의 고객 가치를 만듭니다.”</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="section">
+        <h2>2. 브랜드 소개 (About Binggrae)</h2>
+        <div class="copy">핵심 카피: <strong>“From Korea’s fields to your table — 50+ years of trusted taste”</strong></div>
+        <div class="idea">
+          디자인/레이아웃 아이디어:
+          <ul>
+            <li>타임라인 카드(가로 스크롤 가능) — 설립 연혁, 주요 제품(메로나, 바나나우유 등), K-Food 연계 활동 강조.</li>
+            <li>왼쪽은 간결한 연혁 텍스트(연도별 키포인트), 오른쪽은 제품 실사와 아카이브 이미지(레트로 포스터 스타일의 작은 썸네일).</li>
+            <li>각 연혁 항목에 “더보기”로 간단한 모달을 띄워 영문/다국어로 상세 설명 제공.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="section">
+        <h2>3. 제품 하이라이트 (Products) — 필수: 바나나우유, 메로나</h2>
+        <div class="copy">핵심 카피: <strong>“Iconic flavors loved across generations”</strong></div>
+        <div class="idea">
+          디자인/레이아웃 아이디어:
+          <ul>
+            <li>제품 카드 그리드(3~4컬럼, 반응형). 각 카드: 제품명, 한 줄 설명(영문), 핵심 성분 아이콘(우유, 과일 등), CTA(See Recipe / Buy / Learn More).</li>
+            <li>바나나우유 카드: 'Signature — Banana Milk (바나나우유)' 강조, 짧은 스토리(원재료/레시피 히스토리)와 'Taste Tip' 섹션.</li>
+            <li>메로나 카드: 'Melona (메로나)' 강조, 재료(멜론/우유 기반)와 지역별 인기 포인트(예: 여름 간식 문화) 표기.</li>
+            <li>제품 카드는 이미지 일관성 유지(제품만 단색 배경), 호버 시 간단한 애니메이션(배경 살짝 상승·그림자 확장).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="section">
+        <h2>4. K-Food 스토리 & 문화 (Storytelling)</h2>
+        <div class="copy">핵심 카피: <strong>“Where tradition meets modern flavor — Discover Korean tastes”</strong></div>
+        <div class="idea">
+          디자인/레이아웃 아이디어:
+          <ul>
+            <li>매거진형 섹션(카드 + 읽기 전용 레이아웃) — 'K-Food 캠페인', '지역 특산물과의 콜라보', '빙그레의 지속가능성 노력' 등 콘텐츠 배치.</li>
+            <li>각 아티클은 요약(영문) + 읽기 버튼, 내부는 스토리텔링 위주(짧은 영상/애니메이션 포함 가능).</li>
+            <li>문화 관련 키워드(예: '간식 문화', '계절성', '페스티벌')를 인터랙티브 태그로 노출하여 탐색 유도.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="section">
+        <h2>5. 레시피 & 페어링 (Recipes & Pairings)</h2>
+        <div class="copy">핵심 카피: <strong>“Simple recipes to enjoy Binggrae at home — fusion & classic”</strong></div>
+        <div class="idea">
+          <ul>
+            <li>레시피 카드(사진, 준비 시간, 난이도, 재료): 바나나우유 스무디 레시피, 메로나 바스크 치즈케이크 변형 등 'K-Fusion' 레시피 포함.</li>
+            <li>‘Watch & Cook’ 짧은 동영상(60~90초)과 단계별 이미지로 외국인도 따라하기 쉬움.</li>
+            <li>레시피 페이지에는 소셜 쉐어 버튼, 프린트/저장 기능, 재료별 쇼핑 링크(글로벌 배송 또는 현지 파트너 연결).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="section">
+        <h2>6. 글로벌 캠페인 / 이벤트</h2>
+        <div class="copy">핵심 카피: <strong>“#TasteBinggrae — Join the global K-Food movement”</strong></div>
+        <div class="idea">
+          <ul>
+            <li>캠페인 배너(슬라이더): 시즌별 프로모션, SNS 챌린지(예: 바나나우유 레시피 챌린지), 국가별 이벤트 하이라이트.</li>
+            <li>SNS 피드 통합(인스타그램 해시태그, 틱톡 쇼츠 임베드) — 외국인 참여를 유도하는 UI(언어별 해시태그 추천).</li>
+            <li>지역별 프로모션 페이지(언어/통화 자동 감지)와 로컬 파트너(수입사/셀러) 연결 버튼 제공.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 7 -->
+      <div class="section">
+        <h2>7. 매장/구매 안내 (Store Locator & Global Retail)</h2>
+        <div class="copy">핵심 카피: <strong>“Find Binggrae near you — stores & online”</strong></div>
+        <div class="idea">
+          <ul>
+            <li>지도 기반 스토어 로케이터(국가 선택 → 도시 → 매장 필터). 각 매장 카드에 영업시간, 취급 제품(예: 바나나우유, 메로나), 연락처 표기.</li>
+            <li>전자상거래 / 글로벌 셀러 섹션: 국가별 추천 리테일러(아마존/지역몰), 배송 가능 여부와 예상 배송 기간(글로벌 배송 관련 정보는 최신성 표기 필요).</li>
+            <li>간단한 'Buy Online' CTA — 국가별 언어와 통화 자동 변화 지원 권장.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 8 -->
+      <div class="section">
+        <h2>8. 언어 및 로컬라이제이션</h2>
+        <div class="copy">핵심 카피: <strong>“Localized content — English first, then multi-language support”</strong></div>
+        <div class="idea">
+          <ul>
+            <li>기본 언어: 영어(영문 메인). 추가 언어: 한국어, 일본어, 중국어(간체/번체), 스페인어 등 주요 시장 우선 적용.</li>
+            <li>상품명은 원어 표기(예: 바나나우유, 메로나) + 표준 번역(영문 설명). 문화/식재료 설명은 현지 이해도를 고려해 짧게 보충.</li>
+            <li>시간/단위(ml, g 등) 및 통화 변환을 자동화하여 외국인 사용성 강화.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 9 -->
+      <div class="section">
+        <h2>9. 접근성(Accessibility) & 퍼포먼스</h2>
+        <div class="copy">핵심 카피: <strong>“Fast, accessible, and mobile-first”</strong></div>
+        <div class="idea">
+          <ul>
+            <li>WCAG AA 준수 목표: 색 대비, 키보드 네비게이션, 이미지 대체 텍스트 제공.</li>
+            <li>이미지는 WebP 우선, 지연 로딩(Lazy-load), CDN 및 캐싱 권장 — 글로벌 사용자를 위한 빠른 로드 필수.</li>
+            <li>모바일 퍼스트: 탐색 단순화(하단 고정 CTA), 터치 영역 넓게 설계.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 10 -->
+      <div class="section">
+        <h2>10. CTA(전환) 전략</h2>
+        <div class="copy">핵심 카피: <strong>“Taste, Learn, Share — three clear paths”</strong></div>
+        <div class="idea">
+          <ul>
+            <li>주요 CTA 3가지: 1) Explore Products (제품 페이지), 2) Try Recipes (레시피), 3) Join Campaign (SNS 참여).</li>
+            <li>A/B 테스트 제안: 히어로 버튼 카피(예: 'Try Barana Milk Recipes' vs 'Explore Melona Flavors')로 전환율 비교.</li>
+            <li>CTA는 시각적 일관성 유지(둥근 버튼, 아쿠아 액센트), 모바일에서는 하단 스티키 버튼으로 노출.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 11 -->
+      <div class="section">
+        <h2>11. 메트릭 & 론칭 체크리스트</h2>
+        <div class="copy">핵심 카피: <strong>“Measure what matters”</strong></div>
+        <div class="idea">
+          <ul>
+            <li>핵심 KPI: 방문자 수(국가별), 제품 상세 페이지 뷰, 레시피 다운로드/비디오 재생률, SNS 해시태그 참여수, 매장 유입(로케이터 클릭).</li>
+            <li>런칭 전 점검: 다국어 번역 검수, 결제/구매 플로우 테스트(국가별), 모바일 반응성 테스트, 개인정보/현지법 준수 확인.</li>
+            <li>초기 90일 로드맵: 지역별 콘텐츠 추가, 인플루언서 콜라보, 제품별 마이크로사이트(필요 시) 예정.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section 12 -->
+      <div class="section">
+        <h2>12. 비주얼 가이드 & 톤앤매너</h2>
+        <div class="copy">핵심 카피: <strong>“Minimal, modern, approachable”</strong></div>
+        <div class="idea">
+          <ul>
+            <li>컬러: 메인 액센트(아쿠아), 서브(크림/연베이지), 텍스트(딥 그레이). 타이포: 깔끔한 산세리프(Inter/Noto Sans KR).</li>
+            <li>사진 스타일: 자연광, 제품 중심의 클린 컷(흰 배경 혹은 부드러운 톤 배경), 생활 습관 컷은 자연스러운 표정과 소수 인물.</li>
+            <li>아이콘/일러스트: 단선형(라인 아이콘)과 약간의 라운드로 친근함 유지. 전체적으로 여백을 넉넉히 사용하여 '숨 쉴 공간' 제공.</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="raw-markdown" aria-label="raw-markdown">
+<!--
+아래는 위 내용을 마크다운 리스트 형태로 그대로 복사하여 사용할 수 있도록 제공한 '원문 마크다운'입니다.
+(사용 예: 내부 기획문서, GitHub README, Notion 등에 바로 붙여넣기)
+-->
+- **1. 히어로(Hero)**
+  - **핵심 카피:** “Taste Korea — Tradition & Joy in Every Bite”
+  - **디자인/레이아웃 아이디어:**
+    - 전체 화면 너비의 심플한 레이아웃, 중앙 정렬된 짧은 카피와 서브텍스트(영문).
+    - 좌측에는 미니멀한 제품(바나나우유, 메로나)의 사진 — 우측은 핵심 CTA.
+    - 배경은 연한 크림 톤 + 얇은 그리드 패턴, 버튼은 둥근 모서리와 아쿠아 액센트.
+    - 필수 문구 포함: "빙그레는 국민의 건강과 행복을 위해 최상의 고객 가치를 만듭니다."
+
+- **2. 브랜드 소개 (About Binggrae)**
+  - **핵심 카피:** “From Korea’s fields to your table — 50+ years of trusted taste”
+  - **디자인/레이아웃 아이디어:**
+    - 타임라인 카드(가로 스크롤 가능) — 설립 연혁, 주요 제품(메로나, 바나나우유 등).
+    - 모달로 상세 설명 제공(영문/다국어).
+
+- **3. 제품 하이라이트 (Products) — 필수: 바나나우유, 메로나**
+  - **핵심 카피:** “Iconic flavors loved across generations”
+  - **디자인/레이아웃 아이디어:**
+    - 제품 카드 그리드(3~4컬럼), 바나나우유 카드와 메로나 카드 강조.
+    - 제품 카드 호버 시 간단한 애니메이션.
+
+- **4. K-Food 스토리 & 문화**
+  - **핵심 카피:** “Where tradition meets modern flavor — Discover Korean tastes”
+  - **디자인/레이아웃 아이디어:**
+    - 매거진형 섹션(카드 + 영상) — K-Food 캠페인, 지역 특산물 콜라보.
+
+- **5. 레시피 & 페어링**
+  - **핵심 카피:** “Simple recipes to enjoy Binggrae at home — fusion & classic”
+  - **디자인/레이아웃 아이디어:**
+    - 레시피 카드 + 'Watch & Cook' 짧은 동영상.
+    - 바나나우유 스무디 / 메로나 디저트 레시피 포함.
+
+- **6. 글로벌 캠페인 / 이벤트**
+  - **핵심 카피:** “#TasteBinggrae — Join the global K-Food movement”
+  - **디자인/레이아웃 아이디어:**
+    - SNS 챌린지, 시즌 프로모션 배너, 해시태그 피드 통합.
+
+- **7. 매장/구매 안내 (Store Locator & Global Retail)**
+  - **핵심 카피:** “Find Binggrae near you — stores & online”
+  - **디자인/레이아웃 아이디어:**
+    - 지도 기반 로케이터, 국가별 리테일러/배송 정보 제공.
+
+- **8. 언어 및 로컬라이제이션**
+  - **핵심 카피:** “Localized content — English first, then multi-language support”
+  - **디자인/레이아웃 아이디어:**
+    - 제품명 원어 표기(바나나우유, 메로나) + 영문 설명, 단위/통화 자동 변환.
+
+- **9. 접근성(Accessibility) & 퍼포먼스**
+  - **핵심 카피:** “Fast, accessible, and mobile-first”
+  - **디자인/레이아웃 아이디어:**
+    - WCAG AA 목표, 이미지 WebP, lazy-load, CDN 권장.
+
+- **10. CTA(전환) 전략**
+  - **핵심 카피:** “Taste, Learn, Share — three clear paths”
+  - **디자인/레이아웃 아이디어:**
+    - 주요 CTA: Explore Products / Try Recipes / Join Campaign, 모바일 하단 스티키 CTA.
+
+- **11. 메트릭 & 론칭 체크리스트**
+  - **핵심 카피:** “Measure what matters”
+  - **디자인/레이아웃 아이디어:**
+    - KPI(국가별 방문, 제품 뷰, SNS 참여 등), 런칭 전 다국어/결제/법규 점검.
+
+- **12. 비주얼 가이드 & 톤앤매너**
+  - **핵심 카피:** “Minimal, modern, approachable”
+  - **디자인/레이아웃 아이디어:**
+    - 컬러: 아쿠아 액센트 + 크림, 사진 스타일: 자연광/클린 컷, 아이콘: 라인 스타일.
+</section>
+
+    <footer>
+      <div>참고: 페이지 기획안은 '랜딩(글로벌 홍보)' 목적에 맞춰 구성되었습니다. 필요한 경우 각 섹션별 와이어프레임(데스크톱/모바일), 콘텐츠 텍스트(영문 초안), 이미지 가이드라인까지 확장해 드릴 수 있습니다.</div>
+    </footer>
+  </main>
+</body>
+</html>
